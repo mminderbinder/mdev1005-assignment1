@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #2c5aa0;
+}
+
+header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    color: #2c5aa0;
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+    width: 100%;
+}
+
+main h2 {
+    color: #2c5aa0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+main img {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+    border-radius: 8px;
+    height: 218px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+    line-height: 1.6;
+    color: #495057;
+    text-align: justify;
+}
+
+footer {
+    background-color: #2c5aa0;
+    margin-top: auto;
+    padding: 2rem 0;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand,
+    header h1,
+    main h2 {
+        color: #dc3545;
+    }
+
+    footer {
+        background-color: #dc3545;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 0.95rem;
+    }
+
+    main img {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem auto;
+        max-width: 100%;
+    }
+}

@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Accounting Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+function createNavbar() {
+    return `
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">J & A Accounting</a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -22,6 +15,12 @@
             </li>
         </ul>
     </div>
-</nav>
-</body>
-</html>
+    `;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarContainer = document.getElementById('navbar');
+    if (navbarContainer) {
+        navbarContainer.innerHTML = createNavbar();
+    }
+});
