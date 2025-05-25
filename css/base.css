@@ -20,14 +20,15 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(90deg, rgba(248, 249, 250, 1) 0%, rgba(233, 236, 239, 1) 100%);
     text-align: center;
     padding: 3rem 1rem;
     margin-bottom: 2rem;
 }
 
 header img {
-    max-width: 200px;
+    max-width: 200%;
+    max-height: 20vh;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -39,15 +40,20 @@ header h1 {
     font-size: 2.5rem;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-brand,
-    header h1 {
-        color: #dc3545;
-    }
+main {
+    flex: 1;
+    margin: 0 auto;
+    font-weight: 400;
+}
 
-    footer {
-        background-color: #dc3545;
-    }
+main p {
+    line-height: 1.6;
+    color: #495057;
+}
+
+main img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
