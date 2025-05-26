@@ -28,9 +28,10 @@ header {
 
 header img {
     max-width: 200%;
-    max-height: 20vh;
+    max-height: 18vh;
     height: auto;
     margin-bottom: 1rem;
+    border-radius: 12px;
 }
 
 header h1 {
@@ -66,4 +67,33 @@ footer {
 footer p {
     color: #fff;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header img {
+        max-width: 90%;
+        max-height: 15vh;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem 0.25rem;
+    }
 }
